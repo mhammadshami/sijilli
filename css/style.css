@@ -1,0 +1,256 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--body-font: "Roboto", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: var(--body-font);
+	color: #092140
+}
+/* start slider css */
+.container {
+	max-width: 1120px;
+	width: 100%;
+	padding: 40px 0;
+  }
+  .slide-container {
+	margin: 0 30px;
+	overflow: hidden;
+  }
+  .card {
+	background: #fff;
+	border-radius: 8px;
+  }
+  .card .image-box {
+	height: 200px;
+  }
+  .card .image-box img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px 8px 0 0;
+  }
+  .card .profile-details {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	padding: 15px;
+  }
+  .card .profile-details img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+  }
+  .profile-details .name {
+	font-size: 15px;
+	font-weight: 500;
+  }
+  .profile-details .job {
+	font-size: 12px;
+	font-weight: 500;
+	color: #4d4d4d;
+  }
+  .swiper-navBtn {
+	color: #000;
+	height: 40px;
+	width: 40px;
+	background: #fff;
+	border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+	font-size: 18px;
+  }
+  .swiper-pagination-bullet {
+	background-color: #000;
+  }
+  @media screen and (max-width: 768px) {
+	.swiper-navBtn {
+	  display: none;
+	}
+  }
+  Third, paste the following code
+/* end slider css */
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.Services{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.s-heading{
+	text-align: center;
+}
+
+.s-heading h2{
+	color: black;
+	font-size: 33px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 0px;
+}
+
+.s-heading p{
+	color: #9f9f9f;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: -7px;
+    text-align: center;
+    letter-spacing: .1px;
+}
+
+.s-box-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+}
+
+.s-box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 10px;
+	width: 300px;
+	padding: 20px 25px;
+	height: 470px; 
+	box-sizing: border-box;
+	margin: 30px;
+}
+
+.s-box img{
+	height: 75px;
+}
+
+.s-box h2{
+	color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    text-align: center;
+}
+
+.s-box p{
+	color: #403E3E;
+	font-weight: 500;
+	text-align: center;
+    font-size: 16px;
+}
+
+.s-btn{
+    width: 119px;
+    font-size: 13.8px;
+    height: 36px;
+    background: linear-gradient(to right, #092140, #597190);
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: auto;
+}
+
+
+.s-btn:hover{
+	background: linear-gradient(to right,#FF642A,#FF2A5C);
+	color: white;
+	transition: all ease 0.9s;
+}
+
+
+.s-box:hover{
+	box-shadow: 2px 2px 30px rgba(0,0,0,.1);
+	transition: all ease 0.07s;
+	cursor: pointer;
+}
+
+.bar{
+	width: 100px;
+    height: 1px;
+    position: absolute;
+    left: 33%;
+    top: 4%;
+    transform: translateY(-50%);
+    background-color: #2398D6;
+    border-radius: 0px 0px 1px 1px;
+    display: none;
+    animation: bar 0.4s;
+}
+
+
+.s-box:hover .bar{
+	display: block;
+}
+
+@keyframes bar{
+	0%{
+		width: 0px;
+	}
+	100%{
+		width: 100px;
+	}
+}
+
+@media(max-width: 1050px){
+	.s-box-container{
+		flex-wrap: wrap;
+	}
+
+	.Services{
+		height: auto;
+	}
+
+	.s-heading{
+		margin: 15px;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+}
+
+/* start animations styles */
+.member-card:hover i {
+	animation: moving-arrow 0.6s linear infinite;
+}
+@keyframes moving-arrow {
+	100% {
+		transform: translateX(10px);
+	}
+}
+/* end animations styles */
+
+
+
+
+
+
+
+
+
